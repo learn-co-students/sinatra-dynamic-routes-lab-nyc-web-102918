@@ -1,0 +1,6 @@
+<% phrase_array = [] %>
+<% @number.times {|x| phrase_array << @phrase} %>
+<%= phrase_array.join(" ") %>
+
+<%# Create a dynamic route at get '/say/:number/:phrase' that accepts a number and a phrase
+and returns that phrase in a string the number of times given. %>
